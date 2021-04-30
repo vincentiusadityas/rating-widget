@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/rating-widget/static/css/main.372b4a10.chunk.css",
+    "main.css": "/rating-widget/static/css/main.0917b4bb.chunk.css",
     "main.js": "/rating-widget/static/js/main.1bbb3c4a.chunk.js",
     "main.js.map": "/rating-widget/static/js/main.1bbb3c4a.chunk.js.map",
     "runtime-main.js": "/rating-widget/static/js/runtime-main.920a0934.js",
@@ -10,13 +10,13 @@
     "static/js/3.1a4018fb.chunk.js": "/rating-widget/static/js/3.1a4018fb.chunk.js",
     "static/js/3.1a4018fb.chunk.js.map": "/rating-widget/static/js/3.1a4018fb.chunk.js.map",
     "index.html": "/rating-widget/index.html",
-    "static/css/main.372b4a10.chunk.css.map": "/rating-widget/static/css/main.372b4a10.chunk.css.map",
+    "static/css/main.0917b4bb.chunk.css.map": "/rating-widget/static/css/main.0917b4bb.chunk.css.map",
     "static/js/2.c8069799.chunk.js.LICENSE.txt": "/rating-widget/static/js/2.c8069799.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
     "static/js/runtime-main.920a0934.js",
     "static/js/2.c8069799.chunk.js",
-    "static/css/main.372b4a10.chunk.css",
+    "static/css/main.0917b4bb.chunk.css",
     "static/js/main.1bbb3c4a.chunk.js"
   ]
 }
