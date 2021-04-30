@@ -10,7 +10,7 @@ function App() {
 	const customTitle = () => {
 		return (
 			<h2 className="custom-title">
-				Fully customized your title, style and all.
+				Create your own title component
 			</h2>
 		)
 	}
