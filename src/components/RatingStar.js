@@ -10,11 +10,11 @@ export default function RatingStar({
     filled, 
     semiFilled,
     ratingMessage,
-    clickedIdx,
+    // clickedIdx,
     handleMouseEnter,
     handleMouseLeave,
     handleClicked,
-    handleCancelRating
+    // handleCancelRating
 }) {
 
     // const [filled, setFilled] = useState(Array(num_of_star).fill(0))

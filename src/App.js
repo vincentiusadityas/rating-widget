@@ -6,6 +6,8 @@ function App() {
 
 	const [cancelable, setcancelable] = useState(true)
 	const [titleDisabled, setTitleDisabled] = useState(false)
+	const [title, setTitle] = useState("Customized your title and number of stars")
+	const [numberOfStars, setNumberOfStars] = useState(10)
 
 	const customTitle = () => {
 		return (
@@ -15,6 +17,11 @@ function App() {
 		)
 	}
 
+	const handleNumberChange = (e) => {
+		// let number = e.target.value ? parseInt(e.target.value) : 1
+		setNumberOfStars(e.target.value)
+	}
+
 	return (
 		<div className="App">
 			<header className="App-header">
@@ -22,10 +29,20 @@ function App() {
 					This is an example of a rating widget | <code>{'<RatingWidget />'}</code>
 				</p>
 			</header>
+
 			<RatingWidget />
 			<hr></hr>
-			<RatingWidget title={"Customized your title and number of stars"} num_of_star={10} />
-			<hr></hr>
+
+			<label>
+				{"Input your title: "}
+				<input type="text" defaultValue={title} onChange={(e) => setTitle(e.target.value)}/>
+			</label>
+			<br></br>
+			<label>
+				{"Number of stars: "}
+				<input type="number" min="1" max="50" defaultValue={numberOfStars} onChange={(e) => handleNumberChange(e)}/>
+			</label>
+			<br></br>
 			<label>
 				<input type="checkbox" defaultChecked={cancelable} onChange={() => setcancelable(!cancelable)}/>
 				<span>Rating cancelable?</span>
@@ -35,8 +52,9 @@ function App() {
 				<input type="checkbox" defaultChecked={titleDisabled} onChange={() => setTitleDisabled(!titleDisabled)}/>
 				<span>Title disabled?</span>
 			</label>
-			<RatingWidget title={"Disable your title, make your rating uncancelable"} cancelable={cancelable} titleDisabled={titleDisabled}/>
+			<RatingWidget num_of_star={numberOfStars} title={title} cancelable={cancelable} titleDisabled={titleDisabled}/>
 			<hr></hr>
+			
 			<RatingWidget customTitle={customTitle()} />
 			<hr></hr>
 		</div>
